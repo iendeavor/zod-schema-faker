@@ -5,8 +5,11 @@ import { ZodTypeFaker } from './zod-type-faker'
 
 export class ZodArrayFaker<T extends z.ZodArray<any, any>> extends ZodTypeFaker<T> {
   fake(): z.infer<T> {
-    let min = this.schema._def.minLength?.value ?? 0
-    let max = this.schema._def.maxLength?.value ?? runFake(faker => faker.datatype.number({ min, max: min + 2 }))
+    let min = this.schema._def.minLength?.value ?? this.schema._def.exactLength?.value ?? 0
+    let max =
+      this.schema._def.maxLength?.value ??
+      this.schema._def.exactLength?.value ??
+      runFake(faker => faker.datatype.number({ min, max: min + 2 }))
 
     return Array(runFake(faker => faker.datatype.number({ min, max })))
       .fill(null)

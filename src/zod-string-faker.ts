@@ -43,6 +43,10 @@ export class ZodStringFaker extends ZodTypeFaker<z.ZodString> {
         case 'min':
           min = check.value
           break
+        case 'length':
+          min = check.value
+          max = check.value
+          break
         case 'regex':
           return randexp(check.regex)
         case 'url':

@@ -26,7 +26,7 @@ specifiers:
   ts-jest: ^29.0.0
   ts-node: ^10.0.0
   typescript: ^4.6.3
-  zod: ^3.14.4
+  zod: ^3.20.6
 
 devDependencies:
   '@commitlint/cli': 17.3.0
@@ -54,7 +54,7 @@ devDependencies:
   ts-jest: 29.0.3_np7fs6trw2gv2shaxtqsi4ndla
   ts-node: 10.9.1_43kd24c74e2dc7i2ck7ykbqbva
   typescript: 4.6.3
-  zod: 3.14.4
+  zod: 3.20.6
 
 packages:
 
@@ -2077,7 +2077,7 @@ packages:
       source-map: 0.6.1
       wordwrap: 1.0.0
     optionalDependencies:
-      uglify-js: 3.15.4
+      uglify-js: 3.17.4
     dev: true
 
   /hard-rejection/2.1.0:
@@ -3914,8 +3914,8 @@ packages:
     hasBin: true
     dev: true
 
-  /uglify-js/3.15.4:
-    resolution: {integrity: sha512-vMOPGDuvXecPs34V74qDKk4iJ/SN4vL3Ow/23ixafENYvtrNvtbcgUeugTcUGRGsOF/5fU8/NYSL5Hyb3l1OJA==}
+  /uglify-js/3.17.4:
+    resolution: {integrity: sha512-T9q82TJI9e/C1TAxYvfb16xO120tMVFZrGA3f9/P4424DNu6ypK103y0GPFVa17yotwSyZW5iYXgjYHkGrJW/g==}
     engines: {node: '>=0.8.0'}
     hasBin: true
     requiresBuild: true
@@ -4065,6 +4065,6 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /zod/3.14.4:
-    resolution: {integrity: sha512-U9BFLb2GO34Sfo9IUYp0w3wJLlmcyGoMd75qU9yf+DrdGA4kEx6e+l9KOkAlyUO0PSQzZCa3TR4qVlcmwqSDuw==}
+  /zod/3.20.6:
+    resolution: {integrity: sha512-oyu0m54SGCtzh6EClBVqDDlAYRz4jrVtKwQ7ZnsEmMI9HnzuZFj8QFwAY1M5uniIYACdGvv0PBWPF2kO0aNofA==}
     dev: true

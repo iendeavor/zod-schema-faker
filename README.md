@@ -245,19 +245,22 @@ const data = {
 
 ## Supported APIs
 
+> Please file an issue if you find any missing types.
+
+> ✅ Supported, ❌ Not applicable, ⛏️ Todo
+
 - ✅ z.any
 - ✅ z.array
 - ✅ z.bigint
 - ✅ z.boolean
-- ✅ z.date
-- ✅ z.default
+- ⛏️ z.coerce
+- z.date
+  - ⛏️ min
+  - ⛏️ max
 - ✅ z.discriminatedUnion
-- z.effects
-  - ❌ preprocess: not applicable.
-  - ❌ refine: not yet supported.
-  - ✅ transform: works as expected.
 - ✅ z.enum
-- ❌ z.function: not applicable.
+- ❌ z.function
+- ❌ z.instanceof
 - ✅ z.intersection
 - ✅ z.lazy
 - ✅ z.literal
@@ -277,15 +280,36 @@ const data = {
   - ✅ nonnegative
   - ✅ negative
   - ✅ nonpositive
-  - ❌ multipleOf: not yet supported.
+  - ⛏️ multipleOf
+  - ⛏️ finite
 - ✅ z.object
 - ✅ z.optional
+- ❌ z.preprocess
 - ✅ z.promise
 - ✅ z.record
 - ✅ z.set
-- ✅ z.string
+- z.string
+
+  - ✅ max
+  - ✅ min
+  - ✅ length
+  - ✅ email
+  - ✅ uuid
+  - ✅ cuid
+  - ⛏️ cuid2
+  - ✅ regex
+  - ⛏️ startsWith
+  - ⛏️ endsWith
+  - ⛏️ trim
+  - ⛏️ datetime
+
 - ✅ z.tuple
 - ✅ z.undefined
 - ✅ z.union
 - ✅ z.unknown: return `fake(z.any())`, should not be used.
 - ✅ z.void: return `fake(z.any())`, should not be used.
+- ⛏️ .catch
+- ✅ .default
+- ⛏️ .nullish
+- ❌ .refine
+- ✅ .transform
